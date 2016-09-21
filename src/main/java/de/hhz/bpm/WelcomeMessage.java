@@ -2,16 +2,27 @@ package de.hhz.bpm;
 
 public class WelcomeMessage {
 	
-	private final long id;
 	private final String message;
+	private final String gender;
+	private final String first;
+	private final String last;
 	
-	public WelcomeMessage(long id, String message) {
+	
+	public WelcomeMessage(String message, String gender, String first, String last) {
 		super();
-		this.id = id;
 		this.message = message;
+		this.gender = gender;
+		this.first = first;
+		this.last = last;
 	}
-	public long getId() {
-		return id;
+	public String getGender() {
+		return gender;
+	}
+	public String getFirst() {
+		return first;
+	}
+	public String getLast() {
+		return last;
 	}
 	public String getMessage() {
 		return message;
